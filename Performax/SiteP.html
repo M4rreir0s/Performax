@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performax - Software de Alto Desempenho</title>
+
+        <style> 
+        /* CSS Aqui*/
+    body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: #f5f5f5;
+   }
+       
+   header {
+       background-color: rgb(255, 255, 255);
+       padding: 20px;
+   }
+   
+   h1 {
+       font-size: 36px;
+   }
+   .container {
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 20px;
+   
+   }
+   p {
+       font-size: 18px;
+   }
+   .download-button, .learn-more-button {
+       background-color: #000000;
+       color: #fff;
+       padding: 15px 15px;
+       border: none;
+       font-size: 20px;
+       cursor: pointer;
+       text-decoration: none;
+       display: inline-block;
+       border-radius: 5px;
+       margin: 10px;
+   }
+   /* NAVBAR*/
+   body{
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+.navbar {
+   background-color: black;
+   overflow: hidden;
+   box-shadow: 0px 0px 3px #ccc;
+}
+.navbar a{
+   float: right;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;   
+}
+.navbar a :hover{
+   background-color: #ccc;
+   color: black;
+}
+.logozinho {
+    max-width: 200px;
+    max-height:250px;
+    
+}
+img,header h1{
+    display: inline-block;
+    text-align: left;
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="SiteP.html" id="Home"> Home</a> 
+        <a href="Login.html" id="Log"> Login</a>
+        <a href="cad.html" id="Cad"> Cadastro</a>
+    </div> 
+
+    <header>
+        <img class="logozinho" src="PERFORMAX.jpg">
+        <h1>Performax - Software de Alto Desempenho</h1>
+    </header>
+    <div class="container">
+        <button class="learn-more-button" id="sb" onclick="scrollToSaibaMais()">Saiba Mais</button>
+        
+        <h2>Sobre o Performax</h2>
+        <p>O Performax é um software de alto desempenho projetado para otimizar o seu trabalho e melhorar a eficiência. Com recursos avançados e uma interface intuitiva, o Performax é a solução perfeita para todas as suas necessidades de produtividade.</p>
+
+        <h2>Recursos Principais</h2>
+        <ul>
+            <li>Melhore a produtividade com o Performax</li>
+            <li>Otimize seu fluxo de trabalho</li>
+            <li>Recursos avançados de análise de dados</li>
+            <li>Suporte</li>
+        </ul>
+
+        <h2 id="saiba-mais">Saiba Mais</h2>
+        <p>Conteúdo sobre como usar o Performax.</p>
+    </div>
+    
+    <script>
+        // Botão de Download
+        const url = 'https://www.google.com';
+        const btn = document.querySelector('#Dbutton');
+
+        function openDownloadLink() {
+            const win = window.open(url, '_self');
+            win.focus();
+        }
+
+        btn.addEventListener('click', openDownloadLink);
+
+        // Botão Saiba Mais
+        const sb = document.querySelector('#sb');
+        const saibaMaisUrl = 'saibamais.html';
+
+        function openSaibaMaisLink() {
+            const win = window.open(saibaMaisUrl, '_self');
+            win.focus();
+        }
+
+        sb.addEventListener('click', openSaibaMaisLink);
+
+        function scrollToSaibaMais() {
+            const saibaMaisElement = document.getElementById('saiba-mais');
+            saibaMaisElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Botão de login
+        const log = document.querySelector('#Log');
+
+        function openLoginLink() {
+            const win = window.open('Login.html', '_self');
+            win.focus();
+        }
+
+        log.addEventListener('click', openLoginLink);
+
+        function scrollToLogin() {
+            const logElement = document.getElementById('Log');
+            logElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        
+        // Botão de cadastro
+        const cad = document.querySelector('#cad');
+
+        function opencadLink() {
+            const win = window.open('cad.html', '_self');
+            win.focus();
+        }
+
+        log.addEventListener('click', opencadLink);
+
+        function scrollTocad() {
+            const logElement = document.getElementById('cad');
+            logElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

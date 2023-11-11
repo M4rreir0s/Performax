@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        }
+
+        .login-form {
+            background-color: transparent;
+            align-items: center;
+            border-radius: 5px;
+            padding: 50px;
+            
+        }
+
+        .logo {
+            max-width: 150px;
+            max-height: 150px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-login {
+            background: linear-gradient(-45deg, #fdfdfd, #3df4fa, #23a6d5, #23d5ab);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-login:hover {
+            background-color: #9fc6eb;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <img class="logo" src="PERFORMAX.jpg" alt="Logo">
+            <form class="form" method="post">
+                <div class="form-group">
+                    <input type="text" name="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Senha" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-login">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
